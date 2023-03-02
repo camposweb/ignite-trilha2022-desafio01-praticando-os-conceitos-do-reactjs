@@ -1,0 +1,51 @@
+.wrapper {
+	max-width: 46rem;
+	margin: -1.688rem auto;
+	padding: 0 1rem;
+	padding-bottom: 5rem;
+	
+
+	display: grid;
+	grid-template-columns: 1fr;
+	//gap: 2rem;
+	align-items: flex-start;
+	
+}
+
+@media (max-width: 768px) {
+	/* 
+	16 -> 100%
+	14 -> X
+	14 * 100 / 16
+	
+	*/
+	html {
+		font-size: 87.5%;
+	}
+
+}
+
+.viewList {
+	margin-top: 4rem;
+}
+
+.infoTask {
+	display: flex;
+	justify-content: space-between;
+
+
+	strong {
+		color: var(--blue);
+		font-size: 0.875rem;
+		font-weight: 700;
+	}
+
+	span {
+		color: var(--gray-200);
+		font-size: 0.85rem;
+		font-weight: 700;
+		background: var(--gray-400);
+		border-radius: 999px;
+		padding: 0.125rem 0.5rem;
+	}
+}

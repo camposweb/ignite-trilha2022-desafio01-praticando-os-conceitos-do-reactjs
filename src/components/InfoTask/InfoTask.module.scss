@@ -1,0 +1,20 @@
+.infoTask {
+	display: flex;
+	justify-content: space-between;
+
+
+	strong {
+		color: var(--blue);
+		font-size: 0.875rem;
+		font-weight: 700;
+	}
+
+	span {
+		color: var(--gray-200);
+		font-size: 0.85rem;
+		font-weight: 700;
+		background: var(--gray-400);
+		border-radius: 999px;
+		padding: 0.125rem 0.5rem;
+	}
+}
