@@ -68,17 +68,21 @@ export function Main() {
 					<strong>Concluídas: <span>{tasksCompleted} de {tasksCount}</span></strong>
 				</div>
 				<main>
-					{tasksCount <= 0 ? <NotTask /> :
-						tasks.map(task => {
-							return (
-								<Task
-									key={task.id}
-									task={task}
-									onCompleted={toggleTaskCompletedById}
-									onDeleteTask={deleteTaskById}
-								/>
-							)
-						})
+					{tasksCount <= 0 ? (
+						<NotTask />
+					) :
+						(
+							tasks.map(task => {
+								return (
+									<Task
+										key={task.id}
+										task={task}
+										onCompleted={toggleTaskCompletedById}
+										onDeleteTask={deleteTaskById}
+									/>
+								)
+							})
+						)
 					}
 				</main>
 			</div>

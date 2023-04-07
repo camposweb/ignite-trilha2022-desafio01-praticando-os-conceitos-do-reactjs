@@ -2,7 +2,7 @@ import { Header } from './components/Header'
 import { Main } from './components/Main'
 import './styles/global.scss'
 
-function App() {
+export function App() {
   return (
    <>
    <Header />
@@ -10,5 +10,3 @@ function App() {
    </>
   )
 }
-
-export default App
