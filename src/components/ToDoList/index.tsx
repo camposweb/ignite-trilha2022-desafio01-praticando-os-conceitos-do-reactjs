@@ -1,5 +1,4 @@
 import { InfoTask } from '../InfoTask'
-import { NotTask } from '../NotTask'
 import { Task, TaskType } from '../Task'
 import styles from './ToDoList.module.scss'
 
@@ -21,7 +20,12 @@ const tasks: TaskType[] = [
 	}
 ]
 
-export function ToDoList() {
+interface TodoListProps {
+	onDeleteTask: (taskId: string) => void;
+	onCompleted: (taskId: string) => void;
+}
+
+export function ToDoList({ onDeleteTask, onCompleted }: TodoListProps) {
 
 	const tasksCount = tasks.length;
 	const tasksCompleted = tasks.filter(task => task.isCompleted).length
@@ -30,12 +34,13 @@ export function ToDoList() {
 		<div className={styles.viewList}>
 			<main>
 			<InfoTask infoCreateTask={tasksCount} infoDoneTask={tasksCompleted} />
-			{/* <NotTask /> */}
 			{tasks.map(task => {
 				return (
 					<Task
 						key={task.id}
 						task={task}
+						onCompleted={onCompleted}
+						onDeleteTask={onDeleteTask}
 					/>
 				)
 			})}
