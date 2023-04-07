@@ -13,6 +13,9 @@ export function CreateTask({ onCreateTask }: CreateTaskProps) {
 	function handleCreateNewTask(event: FormEvent) {
 		event.preventDefault();
 
+		if (newTask === '') {
+			return;
+		}
 		onCreateTask(newTask);
 		setNewTask('');
 	}
