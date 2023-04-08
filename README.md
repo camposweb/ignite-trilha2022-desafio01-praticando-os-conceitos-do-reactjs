@@ -19,13 +19,11 @@ Esta aplicação foi desenvolvida a partir do desafio do treinamento de ReactJS 
 - Componentização
 
 ## Tecnologias utilizadas
-___
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 
 ## A aplicação está hospedada na Vercel
-___
 
 [https://ignite-trilha2022-desafio01-praticando-os-conceitos-do-reactjs.vercel.app/](https://ignite-trilha2022-desafio01-praticando-os-conceitos-do-reactjs.vercel.app/)
 
