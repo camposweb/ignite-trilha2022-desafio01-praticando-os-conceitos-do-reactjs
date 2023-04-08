@@ -23,7 +23,7 @@ Esta aplicação foi desenvolvida a partir do desafio do treinamento de ReactJS 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 
-## Para Inicializar a aplicação utiliza o seguinte comando:
+## Para Inicializar a aplicação utilize o seguinte comando:
 
 ```javascript
 npm install
